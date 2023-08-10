@@ -1,0 +1,56 @@
+body{
+    background-color: #E0E0E2;
+    font-family: Arial, sans-serif;
+}
+
+
+h1{
+
+color: hsl(225, 91%, 13%);
+
+}
+
+
+h2{
+
+color: #0b0b0b;
+
+}
+
+.center-text {
+
+    text-align: center;
+}
+
+header {
+
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 100px;
+
+}
+
+
+h2 > span {
+
+    color: #0eb508d8;
+    font-size: 0.75em;
+    font-style: italic;
+
+
+
+}
+
+#copyright {
+
+    padding: 12px;
+    font-size:0.75em;
+}
+
+nav > ul > li{
+
+    display: block;
+
+}
