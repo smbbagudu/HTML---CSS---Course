@@ -29,6 +29,7 @@ header {
     margin-right: auto;
     display: block;
     border-radius: 100px;
+    text-align: center;
 
 }
 
@@ -51,6 +52,22 @@ h2 > span {
 
 nav > ul > li{
 
-    display: block;
+    display: inline;
 
+}
+
+header > img {
+
+    width: 50%;
+    border-radius: 100px;
+}
+
+ul {
+
+    text-align: center;
+}
+
+footer{
+
+    text-align: center;
 }
