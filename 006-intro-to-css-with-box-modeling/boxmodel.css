@@ -1,0 +1,17 @@
+div{
+
+    /* size */
+    height: 200px;
+    width: 200px;
+    background-color: #49A4cc;
+    border-color: brown;
+    border-width: 10px;
+    border-style: solid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 0px;
+    margin-left: 50px;
+
+}
