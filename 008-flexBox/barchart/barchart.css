@@ -1,0 +1,86 @@
+.flex-main{
+
+    display: flex;
+    background-color: #e0e0e0;
+    justify-content: flex-start;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    padding-left: 20px;
+    /* flex-direction: column; */
+    /* gap: px; */
+}
+.main-item{
+
+    display: flex;
+    flex-direction: column;
+    
+    color: azure;
+    padding: 3px;
+    height: 500px;
+    justify-content: flex-end;
+    border-radius: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* writing-mode: vertical-rl; */
+}
+.male{
+    
+    background-color: #eb3116;
+}
+
+.female{
+    
+
+    background-color: #ffbe00;
+}
+
+.male,.female{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: ; */
+}
+
+.child-35{
+    
+    flex-basis: 35%;
+}
+
+.child-65{
+
+    flex-basis: 65%;
+}
+
+.child-15{
+
+    flex-basis: 15%;
+}
+.child-85{
+
+    flex-basis: 85%;
+}
+
+.child-45{
+
+    flex-basis: 45%;
+}
+.child-55{
+
+    flex-basis: 55%;
+}
+
+.child-60{
+
+    flex-basis: 60%;
+}
+.child-40{
+
+    flex-basis: 40%;
+}
+
+p{
+
+    writing-mode: vertical-rl;
+
+    
+}
