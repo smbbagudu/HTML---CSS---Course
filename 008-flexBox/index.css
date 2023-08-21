@@ -1,8 +1,18 @@
+/* asteric to work with the bowser defult
 
+it have property like marging, padding  and more */
 *{
-    padding: 0;
+    padding: 0; 
     margin: 0;
 }
+
+/* body to taget the main body of html  and 
+it have diffrent properties like height and diplay which can be flex 
+NOTE, here the body is used as flex box 
+      1. align-item = work with the cross direction 
+      2. justify-content = work with the main direction
+      3. flex-direction determine the d irection of the items in the flex box 
+*/
 
 body{
 
@@ -24,13 +34,13 @@ body{
 
     display: flex;
     background-color: black;
-    flex-direction: column;
-    /* height: 100px; */
+    flex-direction: row;
+    height: 100px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
-    /* flex-wrap: wrap; */
-
+    flex-wrap: wrap;
+    
 }
 
 .flexBox-2{
@@ -39,7 +49,7 @@ body{
     display: flex;
     background-color: black;
     flex-direction: row;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     gap: 10px;
 
 }
@@ -53,18 +63,26 @@ body{
     
 }
 
+/* flex items 
+    they have there own 
+    propertis that can be use for then 
+    eg. 
+    1. align self to move one item 
+    2. flex-bases= give an item a spesific size 
+    3. flex-shrink alow item to compress it it to tie 
+    4. flex */
 .flexitem-1{
-    background-color: azure;
+    /* background-color: red; */
 
 }
 
 .flexitem-5{
 
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 .flexitem-4{
 
-    align-self: flex-end;
-    flex-basis: 50%;
+    /* align-self: flex-end; */
+    /* flex-basis: 50%; */
 }
