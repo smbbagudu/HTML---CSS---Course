@@ -41,8 +41,119 @@ aside{
 
 main{
 
-    flex-basis: 75%;
+    /* flex-basis: 75%; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     background-color: white;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    padding: 15px;
+
+}
+
+/* top nav start */
+.top-nav{
+
+    flex-basis: 8%;
+    /* background-color: #8bad35; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.search{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    
+}
+
+.search>input{
+
+    border: none;
+}
+
+.search>i{
+
+    color: #7e8c88;
+}
+.top-nav>h1{
+
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.top-nav>button{
+
+    display: flex;
+    background-color: var(--bg);
+    color: white;
+    padding: 0px 10px;
+    justify-content: center ; 
+    align-items: center;
+    border: none;
+    gap: 15px; 
+}
+.top-nav>div,button{
+
+    /* background-color: red; */
+    height: 45px;
+
+}
+
+.top-nav>div{
+
+    border: 2px solid #ebedec;
+    border-radius: 2px;
+}
+
+
+/* bell icon */
+.bell-boder{
+
+    
+    
+    /* border-radius: 10%; */
+    /* padding: 8px 10px;  */
+    color: #7e8c88;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* top nav end  
+----------------------------*/
+
+/* botton-nav start */
+.botton-nav{
+
+    flex-basis: 8%;
+    background-color: #e4f8a2;
+}
+/* botton-nav End
+-------------------------------- */
+
+/* beginnin of debit card */
+.debit-card{
+
+    flex-basis: 24%;
+    background-color: #707070;
+}
+/* End of debit card 
+--------------------------------*/
+
+
+.transactions{
+
+    flex:1;
+    background-color: #ddffcb;
 }
 
 .dashbord-bg{
@@ -94,3 +205,10 @@ ul>li:hover{
     color: var(--bg);
     padding: 10px;
 }
+
+li>i{
+
+    padding-right: 10px;
+}
+
+

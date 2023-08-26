@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashbord</title>
     <link rel="stylesheet" href="./dashbord.css">
+    <script src="https://kit.fontawesome.com/7f0be2a34b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -21,20 +22,20 @@
 
             <nav style="flex:1;">
                 <ul>
-                    <li>Dashboard</li>
-                    <li>Accounts</li>
-                    <li>Cards</li>
-                    <li>Transactions</li>
-                    <li>Payments</li>
-                    <li>Invoicing</li>
-                    <li>Reports</li>
+                    <li> <i class="fa-solid fa-bars"></i> Dashboard</li>
+                    <li> <i class="fa-solid fa-user"></i> Accounts</li>
+                    <li><i class="fa-regular fa-credit-card"></i> Cards</li>
+                    <li> <i class="fa-solid fa-right-left"></i> Transactions</li>
+                    <li> <i class="fa-solid fa-circle-dollar-to-slot"></i> Payments</li>
+                    <li> <i class="fa-solid fa-file-invoice-dollar"></i> Invoicing</li>
+                    <li> <i class="fa-solid fa-chart-simple"></i> Reports</li>
                 </ul>
             </nav>
 
             <nav>
                 <ul>
-                    <li>Profile</li>
-                    <li>Setting</li>
+                    <li> <i class="fa-regular fa-address-card"></i> Profile</li>
+                    <li> <i class="fa-solid fa-sliders"></i> Setting</li>
                 </ul>
             </nav>
 
@@ -44,7 +45,33 @@
 
 
 
-        <main></main>
+        <main>
+            <!-- top nav of the main -->
+            <nav class="top-nav">
+
+                <h1>Cards</h1>
+
+
+                <div class="search"> 
+                    <input type="text" placeholder="Type to search">
+                    <i class="fa-solid fa-magnifying-glass" ></i>
+                </div>
+
+
+                <div class="bell-boder"><i class="far fa-bell "></i></div>
+
+
+                <button> 
+                    <i class="fas fa-plus"></i>
+                    <span> Add new card</span>
+                </button>
+            </nav>
+
+            <nav class="botton-nav"></nav>
+            <section class="debit-card"></section>
+            <section class="transactions"></section>
+
+        </main>
 
     </div>
     
