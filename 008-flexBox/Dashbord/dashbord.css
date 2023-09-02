@@ -29,6 +29,18 @@ body{
 
 }
 
+.align-vertical{
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.show-box{
+
+    border: 1px solid red;
+}
+
 aside{
 
     display: flex;
@@ -135,16 +147,73 @@ main{
 .botton-nav{
 
     flex-basis: 8%;
-    background-color: #e4f8a2;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+    margin-top: 25px;
 }
+
+.botton-nav>ul{
+
+    flex: 1;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.botton-nav>ul>li{
+
+    padding-bottom: 8px;
+}
+
+.botton-nav>ul>li:first-child{
+
+    border-bottom: var(--bg) 3px solid;
+}
+
 /* botton-nav End
 -------------------------------- */
 
 /* beginnin of debit card */
 .debit-card{
+    display: flex;
+    align-items: center;
+    flex-basis: 30%;
+    /* background-color: #707070; */
+    gap: 10px;
+}
 
-    flex-basis: 24%;
-    background-color: #707070;
+.visa-card{
+    display: flex;
+    width: 250px;
+    height: 140px;
+    border-radius: 10px;
+    color: var();
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.visa-card>h1:first-child{
+
+    align-self: flex-end;
+    text-transform: uppercase;
+    transform: skewX(-15deg);
+}
+
+.visa-card>h1>span{
+
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.card-selected{
+
+    background-color: var(--fg);
+}
+
+.card-unselected{
+
+    background-color: #e8eae9;
 }
 /* End of debit card 
 --------------------------------*/
@@ -187,7 +256,7 @@ main{
     
 }
 
-ul>li{
+aside>ul>li{
 
     font-size: 0.8rem;
     list-style: none;
@@ -199,7 +268,7 @@ ul>li{
     padding-right: 10px;
 }
 
-ul>li:hover{
+aside>ul>li:hover{
 
     background-color:var(--fg);
     color: var(--bg);
@@ -210,5 +279,11 @@ li>i{
 
     padding-right: 10px;
 }
+
+li{
+
+    list-style: none;
+}
+
 
 
