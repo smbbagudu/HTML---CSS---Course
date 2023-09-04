@@ -1,3 +1,15 @@
+
+:root{
+
+    --lb:#4f45e4;
+    --lbg2:#44428d;
+}
+
+.text-align{
+
+    text-align: center;
+}
+
 html{
 
     box-sizing: border-box;
@@ -9,51 +21,62 @@ html{
     box-sizing: inherit;
 }
 
+.font-size{
+
+    font-size: 17px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 .center{
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+i{
+    margin-right: 10px;
+}
 body{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
 }
 
 .main-container{
     display: flex;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f3f6ff;
     flex-direction: column;
-    padding: 20px;
+    align-items: center;
+    /* padding: 50px; */
 
+    /* flex-wrap: wrap; */
+
+}
+
+.main-container-inner{
+    display: flex;
+    width: 90%;
+    min-height: 100vh; 
+    background-color: #f3f6ff;
+    flex-direction: column;
+    /* margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px; */
 }
 
 .nav-brand-container{
 
     display: flex;
-
     flex-basis: 10%;
     /* background-color: #f1ede2; */
     border: 1px solid #f1f1f1 ;
     border-radius: 6px;
     /* height:; */
+    margin-top: 10px;
     margin-bottom: 100px;
-
-    padding: 10px;
-}
-
-.navbar-menu{
-
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
 }
 
 .brand-name{
@@ -70,13 +93,42 @@ body{
 
 }
 
+.nav-menu-link{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+    flex: 1;
+
+
+}
+
 .navbar-menu{
 
     flex-basis: 30%;
     display: flex;
-    justify-content: space-around;
+    
+    /* justify-content: space-around;
+    */
+    /* border: 1px solid red; */
+    /* gap: ; */
 
 }
+.navbar>ul>li{
+
+    list-style: none;
+}
+
+.navbar>.navbar-menu>ul>{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
 
 .menue-botton{
 
@@ -88,7 +140,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffff;
+    color: white;
+    text-decoration: none;
 }
 
 .menue-botton:hover{
@@ -102,6 +155,8 @@ body{
     font-size: 16px;
     font-family: 'Trebuchet MS';
     font-weight: 500;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -111,45 +166,367 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; 
+    gap: 30px;
+    /* border: 1px solid red; */
 
 }
 
 
-.main-content-001{
-
+.main-content-item1{
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    /* border: 1px solid red; */
+    
+   
+   
 }
-.main-content-001>H1{
 
 
-    font-size: 60PX;
+.main-content-item1>h1{
+
+    font-size: 60px;
 }
 
-.main-content-001-1{
+.main-content-item1-1{
 
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
+    width: 60%;
+
     
     
 }
 
-.main-content-001-1-ps{
+.main-content-item1-1-ps{
 
-    border: 1px solid red;
+    padding: 2px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcebfe;
+    width: 100%;
+    
+
+    
+}
+.monthly-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f6ff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    flex-basis: 50%;
+}
+
+.yearly-bg{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
     padding: 10px;
     border-radius: 10px;
+    font-size: 20px;
+    flex-basis: 50%;
 }
-
 .yearly-billing-span{
-
     background-color: #4f45e4;
     border-radius: 50px;
     padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
     color: #ffff;
+    
+
+}
+
+
+
+/* item2 css */
+
+.main-content-item2{
+    min-height: 750px;
+    /* border: 1px solid red; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 25px;
+    
+
+}
+
+.main-content-item2-card{
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* width: 320px; */
+    min-height: 750px;
+    max-height: 750px;
+    flex-basis: 30%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px gray;
+    /* padding: 10px; */
+    
+}
+
+.card-item1{
+    display: flex;
+    border-bottom: 1px solid #979aa2;
+    padding: 20px;
+    flex-basis: 40%;
+    flex-direction: column;
+}
+
+
+.card-item1>.links{
+
+    background-color: #4f45e4;
+    padding: 10px;
+    color: white;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card-item1>.p-same-style{
+
+    padding: 5px;
+
+
+}
+
+.card-item1>.p1{
+
+    font-size: 30px;
+    font-family: 'Trebuchet MS';
+}
+
+.card-item1>.p2{
+
+    font-size: 50px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.card-item1>.p2>span{
+
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+    margin-left: 8px;
+    color: #979aa2;
+}
+
+.card-item1>.p3{
+    font-size: 15px;
+    font-family: 'Trebuchet MS';
+   color: #979aa2;
+}
+
+/* .card-item2 */
+
+.card-item2>ul>li{
+
+    list-style: none;
+    padding: 10px;
+}
+
+.card-item2{
+
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 10px; */
+
+    padding: 20px;
+    flex: 1;
+}
+
+.card-border{
+
+    border: 3px solid var(--lb);
+    
+}
+
+.main-content-item3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    min-height:600px;
+    /* border: 1px solid red; */
+    background-color:var(--lbg2);
+    color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+
+    margin-bottom: 50px;
+
+    padding: 100px;
+
+
+}
+
+
+.self-item-1{
+
+    display: flex;
+    /* border: 1px solid white; */
+    flex-direction: column;
+    row-gap: 25px;
+}
+.self-item-1:first-child{
+
+    font-size: 30px;
+}
+
+
+.self-item-2{
+
+    display: flex;
+    /* gap: 50px; */
+    /* border: 1px solid white; */
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    column-gap: 120px;
+}
+
+.self-item-2-item2{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10px; */
+    row-gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.self-item-2-item2>h3{
+    display: inline;
+    background-color:#fdd6ab ;
+    color: #dd6938;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 8px;
+}
+
+.self-item-2-item2>h2{
+    display: inline;
+    background-color:#b9f7d0 ;
+    color: #167b3c;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 8px;
+
+}
+
+
+.item4-self-item1{
+
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.profile{
+
+    display: flex;
+
+    column-gap: 20px;
+}
+
+.profile>span>img{
+
+    border-radius: 100px;
+}
+
+.profile>span{
+    
+    border-radius: 100px;
+}
+
+.review-botton{
+
+    background-color: #111828 ;
+    display: flex;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+/* the beginning of the footer  */
+
+.i-am-the-footer{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #111828 ;
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    padding-left: 100px;
+    row-gap: 40px;
+}
+
+.footer-first-child{
+
+    display: flex;
+    color: wheat;
+    /* align-items: center; */
+    justify-content: center;
+    column-gap: 50px;
+}
+
+
+.footer-first-child>ul>li{
+
+    list-style: none;
+}
+
+.footer-first-child>ul{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+
+ul>.list-header{
+
+    margin-bottom: 10px;
+}
+
+.footer-second-child{
+
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.flex-item-1{
+
+    flex: 1;
+}
+.flex-item-2{
+
+/* flex-basis: 30%; */
 
 }
